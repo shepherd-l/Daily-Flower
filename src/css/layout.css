@@ -1,3 +1,9 @@
+.container{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+}
 #main-logo{
     display:block;
     margin-right:auto;
@@ -8,4 +14,9 @@
     margin-top: 50px;
     text-align: center;
 
+}
+
+.modal { 
+    height: 500px;
+    overflow: visible
 }

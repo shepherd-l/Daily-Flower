@@ -2,7 +2,9 @@ body{
     background-color: blanchedalmond;
 }
 
-.login-button, .register-button, .submit-button{
+.login-button, .register-button, .submit-button, .flower{
     background-color: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
+

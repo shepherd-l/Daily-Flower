@@ -14,7 +14,7 @@ class RegisterScreen extends React.Component{
             username: this.state.username,
         }
 
-        axios.post('http://localhost:5000/users/add', user)
+        axios.post('http://localhost:3000/users/add', user)
             .then(res => console.log(res.data));
     }
         
