@@ -1,5 +1,10 @@
 import React from 'react';
-import logo from './resources/logo.PNG';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import HomeScreen from './home-screen/HomeScreen';
+import LoginScreen from './login-screen/LoginScreen';
+import RegisterScreen from './register-screen/RegisterScreen';
+import FlowerScreen from './flower-screen/FlowerScreen';
+import Navbar from './navbar/Navbar';
 //import logo from './logo.svg';
 //import './App.css';
 
@@ -22,9 +27,12 @@ import logo from './resources/logo.PNG';
 
 function App() {
   return (
-    <div className="App">
-      <img src = {logo}></img>
-    </div>
+    <Router>
+      <Route exact path = "/" component={HomeScreen}></Route>
+      <Route path = "/login" component={LoginScreen}></Route>
+      <Route path = "/register" component={RegisterScreen}></Route>
+      <Route path = "/flowers/:uid" component={FlowerScreen}></Route>
+    </Router>
   );
 }
 

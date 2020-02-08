@@ -1,0 +1,8 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.login-button, .register-button, .submit-button{
+    background-color: transparent;
+    border-color: transparent;
+}
