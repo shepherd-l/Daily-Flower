@@ -5,6 +5,8 @@ import LoginScreen from './login-screen/LoginScreen';
 import RegisterScreen from './register-screen/RegisterScreen';
 import FlowerScreen from './flower-screen/FlowerScreen';
 import Navbar from './navbar/Navbar';
+
+import CreateUser from './createUser';
 //import logo from './logo.svg';
 //import './App.css';
 
@@ -29,6 +31,7 @@ function App() {
   return (
     <Router>
       <Route exact path = "/" component={HomeScreen}></Route>
+      <Route path = "/test" component={CreateUser}></Route>
       <Route path = "/login" component={LoginScreen}></Route>
       <Route path = "/register" component={RegisterScreen}></Route>
       <Route path = "/flowers/:uid" component={FlowerScreen}></Route>

@@ -17,6 +17,25 @@
 }
 
 .modal { 
-    height: 500px;
+    height: 750px;
     overflow: visible
+}
+
+.modal-header{
+    text-align: right;
+}
+
+.modal-close-button{
+    height: 100px;
+}
+
+.flower-description{
+    overflow: visible;
+    resize:none;
+    height:300px;
+}
+
+.flower{
+    width:90%;
+    height: auto;
 }

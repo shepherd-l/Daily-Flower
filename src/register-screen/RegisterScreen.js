@@ -3,19 +3,31 @@ import submit from '../resources/submit.png';
 import axios from 'axios';
 
 class RegisterScreen extends React.Component{
-    state={
-        username: '',
-        password: '',
+    constructor(props){
+        super(props);
+
+        this.state={
+            username: '',
+            password: '',
+        }
     }
+    
     handleSubmit = (e) =>{
         e.preventDefault();
 
         const user = {
-            username: this.state.username,
+          username: this.state.username
         }
-
-        axios.post('http://localhost:3000/users/add', user)
-            .then(res => console.log(res.data));
+    
+        console.log(user);
+    
+        axios.post('http://localhost:5000/users/add', user)
+          .then(res => {console.log(res)})
+          .catch(error =>{console.log(error)});
+    
+        this.setState({
+          username: ''
+        })    
     }
         
     handleChange = (e) =>{
