@@ -1,14 +1,18 @@
 .container{
-    position: absolute;
     width: 80%;
-    left: 10%;
+    margin-right:auto;
+    margin-left:auto;
     top: 5%;
 }
+
+/***** Main Page ***/
 #main-logo{
     display:block;
     margin-right:auto;
     margin-left:auto;
     margin-top: 5%;
+    width: 90%;
+    height: auto;
 }
 .home-buttons{
     margin-top: 50px;
@@ -16,7 +20,27 @@
 
 }
 
-.modal { 
+.title{
+    text-align: center;
+    color: #654023;
+}
+
+/****** login page ******/
+.login-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit-button{
+    width: 200px;
+}
+.submit-button img{
+    width: 100%;
+    height: auto;
+}
+
+/****** Modal CSS *****/
+.flower-modal { 
     height: 750px;
     overflow: visible
 }
@@ -26,16 +50,39 @@
 }
 
 .modal-close-button{
-    height: 100px;
+    height: 65px;
+    width: 65px;
+}
+
+.modal-close-button img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-submit-button{
+    width: 200px;
+}
+.modal-submit-button img{
+    width: 100%;
+    height: auto;
 }
 
 .flower-description{
     overflow: visible;
     resize:none;
-    height:300px;
+    height:280px;
+    padding: 10px
 }
 
 .flower{
     width:90%;
     height: auto;
+}
+
+.back img{
+    width: 190px;
+}
+
+#flower-date{
+    border-bottom:none!important;
 }

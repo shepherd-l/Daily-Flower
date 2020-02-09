@@ -2,7 +2,7 @@ body{
     background-color: blanchedalmond;
 }
 
-.login-button, .register-button, .submit-button, .flower{
+.login-button, .register-button, .submit-button, .flower, .back{
     background-color: transparent!important;
     border-color: transparent;
     cursor: pointer;
@@ -21,4 +21,23 @@ textarea{
 }
 .modal-footer{
     background-color: rgba(250, 244, 236, 0.938)!important;
+}
+
+.calendar-icon{
+    color: #6d814d;
+}
+.prompt{
+    font-size:20px;
+}
+
+.datepicker-date-display{
+    background-color: #6d814d!important;
+}
+
+.datepicker-done, .datepicker-cancel{
+    color: #6d814d;
+}
+
+.datepicker{
+    font-size: 20px!important;
 }
